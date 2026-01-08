@@ -5,10 +5,11 @@
     "license": "MIT",
     "url": "https://github.com/laiduc1312209/pld-cli/archive/refs/tags/1.0.0.zip",
     "hash": "FE24874AF44490B481C584C4D3A957969502953237E7B7A53E2E381CF8F4C10A",
-    "bin": "index.js",
+    "bin": [["index.js", "pld"]],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/laiduc1312209/pld-cli/archive/refs/tags/1.0.0.zip"
     },
     "depends": "nodejs"
 }
+
