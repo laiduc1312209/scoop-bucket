@@ -1,15 +1,18 @@
 {
     "version": "1.0.0",
     "description": "Upload file by CLI",
-    "homepage": "https://github.com/laiduc1312209/pld-cli.git",
+    "homepage": "https://github.com/laiduc1312209/pld-cli",
     "license": "MIT",
     "url": "https://github.com/laiduc1312209/pld-cli/archive/refs/tags/1.0.0.zip",
     "hash": "FE24874AF44490B481C584C4D3A957969502953237E7B7A53E2E381CF8F4C10A",
-    "bin": [["pld", "index.js"]],
+    "extract_dir": "pld-cli-1.0.0",
+    "bin": [
+        ["index.js", "pld"]
+    ],
+    "depends": "nodejs",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/laiduc1312209/pld-cli/archive/refs/tags/1.0.0.zip"
-    },
-    "depends": "nodejs"
+        "url": "https://github.com/laiduc1312209/pld-cli/archive/refs/tags/$version.zip",
+        "extract_dir": "pld-cli-$version"
+    }
 }
-
